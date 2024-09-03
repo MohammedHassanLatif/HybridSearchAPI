@@ -48,8 +48,8 @@ Stores the detailed content of each magazine, including vector representations f
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/yourusername/HybridSearchAPI.git
-   cd HybridSearchAPI
+   git clone https://github.com/yourusername/ScottishPowerCodeChallenge.git
+   cd ScottishPowerCodeChallenge
 
 2. **Install Dependencies**:
    ```bash
