@@ -60,43 +60,43 @@ Stores the detailed content of each magazine, including vector representations f
 Edit the .env file to add your database connection details. Ensure the database schema is set up correctly using the provided SQL scripts or ORM models.
 
 4. **Run the API**:
-
    ```bash
     npm start
+   
 The API will start on http://localhost:3000 (or the configured port).
 
-Example Search Queries
+### Example Search Queries
 Keyword Search
-bash
-Copy code
 curl -X GET "http://localhost:3000/search?query=technology"
+
 Expected Result: Returns a list of magazines matching the keyword "technology" in the title, author, or content.
 
-Vector Search
-bash
-Copy code
+### Vector Search
 curl -X POST "http://localhost:3000/search/vector" -H "Content-Type: application/json" -d '{"vector": [0.1, 0.2, ...]}'
+
 Expected Result: Returns a list of magazines with content vectors similar to the provided vector.
 
-Hybrid Search
-bash
-Copy code
+### Hybrid Search
 curl -X POST "http://localhost:3000/search/hybrid" -H "Content-Type: application/json" -d '{"query": "technology", "vector": [0.1, 0.2, ...]}'
+
 Expected Result: Combines both keyword and vector searches to return the most relevant results.
 
-Performance Considerations
+### Performance Considerations
 Indexing: Proper indexing on the title, author, and vector_representation fields to optimize search performance.
 Database Optimizations: Utilize database-specific features like full-text search and vector indexes (if supported) for efficient querying.
-Deliverables
+
+### Deliverables
 Source Code: Complete source code of the API.
 Database Schema: SQL scripts or ORM models for creating the database tables.
 Documentation: Detailed documentation on setting up and running the API, including usage examples.
 Performance Report: A brief report on performance considerations and optimizations implemented.
-Evaluation Criteria
+
+### Evaluation Criteria
 Functionality: API should meet all specified requirements.
 Code Quality: Code should be clean, readable, and well-documented.
 Performance: Efficient handling of large datasets is crucial.
 Innovation: Creative solutions for hybrid search implementation are valued.
 Documentation: Clear and comprehensive documentation is essential.
-Timeline
+
+### Timeline
 This task is to be completed within 7 days.
